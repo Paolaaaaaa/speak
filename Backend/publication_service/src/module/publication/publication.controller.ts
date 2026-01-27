@@ -1,4 +1,4 @@
-import { Controller, Get, Param } from '@nestjs/common';
+import { Controller, Get, Param, ParseUUIDPipe } from '@nestjs/common';
 import { PublicationService } from './publication.service';
 
 @Controller('publication')
@@ -10,7 +10,10 @@ export class PublicationController {
   }
 
   @Get(':publicationID')
-  async findById(@Param('publicationID') publicationID: string) {
+  async findById(
+    @Param('publicationID', new ParseUUIDPipe({ version: '4' }))
+    publicationID: string,
+  ) {
     return await this.publicationService.getPublication(publicationID);
   }
 }

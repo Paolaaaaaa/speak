@@ -1,4 +1,4 @@
-import { Injectable, BadRequestException } from '@nestjs/common';
+import { Injectable, NotFoundException } from '@nestjs/common';
 import { PublicationEntity } from './entities/publication.entity';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
@@ -14,8 +14,9 @@ export class PublicationService {
     const publication = await this.publicationRepository.findOne({
       where: { id: id },
     });
+
     if (!publication) {
-      throw new BadRequestException();
+      throw new NotFoundException();
     }
     return publication;
   }
