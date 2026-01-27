@@ -1,0 +1,39 @@
+services:
+  speak_postgres_db:
+    image: postgres:17
+    container_name: postgres_speak_db
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: postgres_speak_db
+    volumes:
+      - speak_postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d postgres_speak_db"]
+      interval: 10s
+      retries: 5
+      start_period: 30s
+      timeout: 10s
+  speak_auth_service:
+    build: ./Backend/auth_service
+    container_name: speak_auth_service
+    ports:
+      - "3000:3000"
+    depends_on:
+      speak_postgres_db:
+        condition: service_healthy
+
+  speak_publication_service:
+    build: ./Backend/publication_service
+    container_name: speak_publication_service
+    ports:
+      - "3001:3001"
+    depends_on:
+      speak_postgres_db:
+        condition: service_healthy
+
+volumes:
+    speak_postgres_data:
+
