@@ -1,7 +1,15 @@
 ## Speak
 
 Explicación de Propuesta :
-Speak es una resocial, la cual cuenta con  funcionalidades como hacer login, realizar publicaciones, ver publicaciones y listar aplicaciones. En base esto el entendimiento que se es que  0 a muchas publicaciones, pero una publicación solo puede tener asociado un usuario publicador.
+Speak es una red-social, la cual cuenta con  funcionalidades como:
+- Hacer login
+- Crear publicaciones
+- Ver publicaciones
+- Listar aplicaciones
+
+
+
+Un usuario puede tener  0 a muchas publicaciones, pero una publicación solo puede tener asociado un usuario publicador.
 
 A continuación se ve un diagrama con el entendimiento del problema:
 
@@ -19,7 +27,8 @@ De acuerdo con las necesidades especificadas la aplicación debe tener una arqui
 En el diagrama se puede ver de izquierda a derecha:  
 - Un frontend que va a ser desplegado en un contenedor  y desarrollado con React
 - un contenedor con Kong API gateway para el manejo unificado de peticiones al back desde el front. 
-- Tenemos dons contenedores para los dos microservicios, Authentication
+- Tenemos dos contenedores para los dos microservicios, Authentication
 -  La base de datos desplegada en docker con un volumen adjunto para permitir la persistencia de la información.
 
 Las consultas de usuario van a realizarse con consultas entre microservicios se realizan con HTTP.
+
