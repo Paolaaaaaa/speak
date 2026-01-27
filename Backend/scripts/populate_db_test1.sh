@@ -1,0 +1,2 @@
+docker exec -i postgres_speak_db psql -U postgres -d postgres_speak_db < Backend/scripts/publication.sql
+docker exec -i postgres_speak_db psql -U postgres -d postgres_speak_db < Backend/scripts/user.sql
