@@ -1,22 +1,34 @@
 import { Module } from '@nestjs/common';
-import { AppController } from './app.controller';
 import { AppService } from './app.service';
-import { UsersModule } from './users/users.module';
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { UserEntity } from './users/entities/user.entity';
-import { AuthenticatorEntity } from './authenticator/entities/authenticator.entity';
-
+import { UserEntity } from './modules/users/entities/user.entity';
+import { ConfigModule } from '@nestjs/config';
+import { JwtModule } from '@nestjs/jwt';
+import { UsersModule } from './modules/users/users.module';
+import { AppController } from './app.controller';
+import { AuthJwtModule } from './modules/auth.module/auth.jwt.module';
 @Module({
   imports: [
+    ConfigModule.forRoot({
+      isGlobal: true,
+    }),
+
     UsersModule,
+    AuthJwtModule,
+
+    JwtModule.register({
+      global: true,
+      secret: process.env.JWT_KEY,
+      signOptions: { expiresIn: '130s' },
+    }),
     TypeOrmModule.forRoot({
       type: 'postgres',
-      host: 'localhost',
+      host: 'speak_postgres_db',
       port: 5432,
       username: 'postgres',
       password: 'postgres',
       database: 'postgres_speak_db',
-      entities: [UserEntity, AuthenticatorEntity],
+      entities: [UserEntity],
       synchronize: true,
     }),
   ],
