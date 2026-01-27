@@ -1,4 +1,4 @@
-import { AuthenticatorEntity } from 'src/authenticator/entities/authenticator.entity';
+import { AuthenticatorEntity } from 'src/Modules/authenticator/entities/authenticator.entity';
 import {
   Column,
   Entity,

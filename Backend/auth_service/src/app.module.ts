@@ -1,10 +1,10 @@
 import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
-import { UsersModule } from './users/users.module';
+import { UsersModule } from './Modules/users/users.module';
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { UserEntity } from './users/entities/user.entity';
-import { AuthenticatorEntity } from './authenticator/entities/authenticator.entity';
+import { UserEntity } from './Modules/users/entities/user.entity';
+import { AuthenticatorEntity } from './Modules/authenticator/entities/authenticator.entity';
 
 @Module({
   imports: [
