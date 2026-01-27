@@ -24,6 +24,16 @@ services:
     depends_on:
       speak_postgres_db:
         condition: service_healthy
+
+  speak_publication_service:
+    build: ./Backend/publication_service
+    container_name: speak_publication_service
+    ports:
+      - "3001:3001"
+    depends_on:
+      speak_postgres_db:
+        condition: service_healthy
+
 volumes:
     speak_postgres_data:
 
