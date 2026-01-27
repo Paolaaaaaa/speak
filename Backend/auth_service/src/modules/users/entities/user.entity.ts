@@ -1,10 +1,10 @@
 import { Column, CreateDateColumn, Entity, PrimaryColumn } from 'typeorm';
 
-@Entity('user')
+@Entity('users')
 export class UserEntity {
-  @PrimaryColumn({ length: 36 })
+  @PrimaryColumn({ length: 30 })
   username: string;
-  @Column({ length: 36 })
+  @Column({ length: 100 })
   password: string;
   @Column()
   role: string;
@@ -13,5 +13,5 @@ export class UserEntity {
   @Column({ type: 'timestamptz' })
   last_update: Date;
   @CreateDateColumn({ type: 'timestamptz', default: () => 'CURRENT_TIMESTAMP' })
-  creation_Date: Date;
+  creation_date: Date;
 }

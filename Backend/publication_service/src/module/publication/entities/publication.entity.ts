@@ -14,6 +14,9 @@ export class PublicationEntity {
   @Column({ length: 400 })
   message: string;
 
+  @Column({ length: 30 })
+  username: string;
+
   @CreateDateColumn({ type: 'timestamptz', default: () => 'CURRENT_TIMESTAMP' })
-  creation_Date: Date;
+  creation_date: Date;
 }
