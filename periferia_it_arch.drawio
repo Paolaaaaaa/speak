@@ -1,49 +1,104 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36" version="29.2.9" pages="2">
   <diagram name="Página-1" id="sw2ehc8zWf5Y282Lr3U0">
-    <mxGraphModel dx="1426" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2253" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="-SpAMbYbZLuDqSl0wFJm-5" edge="1" parent="1" source="-SpAMbYbZLuDqSl0wFJm-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="-SpAMbYbZLuDqSl0wFJm-4">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="-SpAMbYbZLuDqSl0wFJm-1" parent="1" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;" value="Docker" vertex="1">
-          <mxGeometry height="120" width="150" x="80" y="250" as="geometry" />
-        </mxCell>
-        <mxCell id="-SpAMbYbZLuDqSl0wFJm-6" edge="1" parent="1" source="-SpAMbYbZLuDqSl0wFJm-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+        <mxCell id="-SpAMbYbZLuDqSl0wFJm-6" edge="1" parent="1" source="dV46EJVJ1ePy4s7cVzv9-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=-0.004;exitDx=0;exitDy=0;exitPerimeter=0;" target="dRhZoIEE2JAG5nakRzDz-8">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
+              <mxPoint x="345" y="239" />
               <mxPoint x="345" y="150" />
             </Array>
+            <mxPoint x="345" y="240" as="sourcePoint" />
             <mxPoint x="460" y="150" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="-SpAMbYbZLuDqSl0wFJm-4" parent="1" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;" value="Docker" vertex="1">
-          <mxGeometry height="120" width="150" x="270" y="240" as="geometry" />
-        </mxCell>
-        <mxCell id="dRhZoIEE2JAG5nakRzDz-1" parent="1" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;" value="Docker" vertex="1">
-          <mxGeometry height="260" width="260" x="700" y="280" as="geometry" />
-        </mxCell>
-        <mxCell id="dRhZoIEE2JAG5nakRzDz-4" parent="1" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;" value="PostgreSQL" vertex="1">
-          <mxGeometry height="120" width="150" x="770" y="360" as="geometry" />
-        </mxCell>
-        <mxCell id="dRhZoIEE2JAG5nakRzDz-5" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Docker" vertex="1">
-          <mxGeometry height="30" width="60" x="815" y="320" as="geometry" />
+        <mxCell id="dV46EJVJ1ePy4s7cVzv9-8" edge="1" parent="1" source="dV46EJVJ1ePy4s7cVzv9-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.508;exitY=1.004;exitDx=0;exitDy=0;exitPerimeter=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="355" y="360" as="sourcePoint" />
+            <mxPoint x="460" y="520" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="dRhZoIEE2JAG5nakRzDz-6" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" value="volume" vertex="1">
-          <mxGeometry height="80" width="60" x="1010" y="380" as="geometry" />
+          <mxGeometry height="80" width="60" x="1140" y="350" as="geometry" />
         </mxCell>
         <mxCell id="dRhZoIEE2JAG5nakRzDz-7" edge="1" parent="1" source="dRhZoIEE2JAG5nakRzDz-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0;entryDx=0;entryDy=27.5;entryPerimeter=0;" target="dRhZoIEE2JAG5nakRzDz-6">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="dRhZoIEE2JAG5nakRzDz-8" parent="1" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;" value="Docker" vertex="1">
+        <mxCell id="dV46EJVJ1ePy4s7cVzv9-2" edge="1" parent="1" source="dRhZoIEE2JAG5nakRzDz-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="dRhZoIEE2JAG5nakRzDz-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dV46EJVJ1ePy4s7cVzv9-1" connectable="0" parent="1" style="group" value="" vertex="1">
+          <mxGeometry height="260" width="260" x="780" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="dRhZoIEE2JAG5nakRzDz-1" parent="dV46EJVJ1ePy4s7cVzv9-1" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;" value="Docker" vertex="1">
+          <mxGeometry height="260" width="260" as="geometry" />
+        </mxCell>
+        <mxCell id="dRhZoIEE2JAG5nakRzDz-4" parent="dV46EJVJ1ePy4s7cVzv9-1" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;" value="PostgreSQL" vertex="1">
+          <mxGeometry height="120" width="150" x="70" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="dRhZoIEE2JAG5nakRzDz-5" parent="dV46EJVJ1ePy4s7cVzv9-1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Docker" vertex="1">
+          <mxGeometry height="30" width="60" x="115" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="dV46EJVJ1ePy4s7cVzv9-3" connectable="0" parent="1" style="group" value="" vertex="1">
           <mxGeometry height="260" width="260" x="470" y="10" as="geometry" />
         </mxCell>
-        <mxCell id="dRhZoIEE2JAG5nakRzDz-9" parent="1" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;" value="PostgreSQL" vertex="1">
-          <mxGeometry height="120" width="150" x="540" y="90" as="geometry" />
+        <mxCell id="dRhZoIEE2JAG5nakRzDz-8" parent="dV46EJVJ1ePy4s7cVzv9-3" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;" value="Docker" vertex="1">
+          <mxGeometry height="260" width="260" as="geometry" />
         </mxCell>
-        <mxCell id="dRhZoIEE2JAG5nakRzDz-10" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Docker" vertex="1">
-          <mxGeometry height="30" width="60" x="585" y="50" as="geometry" />
+        <mxCell id="dRhZoIEE2JAG5nakRzDz-9" parent="dV46EJVJ1ePy4s7cVzv9-3" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;" value="&lt;div&gt;Nest js&lt;/div&gt;Athentication" vertex="1">
+          <mxGeometry height="120" width="150" x="70" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="dRhZoIEE2JAG5nakRzDz-10" parent="dV46EJVJ1ePy4s7cVzv9-3" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Docker" vertex="1">
+          <mxGeometry height="30" width="60" x="115" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="dV46EJVJ1ePy4s7cVzv9-4" connectable="0" parent="1" style="group" value="" vertex="1">
+          <mxGeometry height="260" width="260" x="460" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="dV46EJVJ1ePy4s7cVzv9-5" parent="dV46EJVJ1ePy4s7cVzv9-4" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;" value="Docker" vertex="1">
+          <mxGeometry height="260" width="260" as="geometry" />
+        </mxCell>
+        <mxCell id="dV46EJVJ1ePy4s7cVzv9-6" parent="dV46EJVJ1ePy4s7cVzv9-4" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;" value="&lt;div&gt;Nest js&lt;/div&gt;Publication" vertex="1">
+          <mxGeometry height="120" width="150" x="70" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="dV46EJVJ1ePy4s7cVzv9-7" parent="dV46EJVJ1ePy4s7cVzv9-4" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Docker" vertex="1">
+          <mxGeometry height="30" width="60" x="115" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="dV46EJVJ1ePy4s7cVzv9-9" edge="1" parent="1" source="dV46EJVJ1ePy4s7cVzv9-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" target="dRhZoIEE2JAG5nakRzDz-1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="760" y="520" />
+              <mxPoint x="760" y="370" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dV46EJVJ1ePy4s7cVzv9-10" connectable="0" parent="1" style="group" value="" vertex="1">
+          <mxGeometry height="260" width="260" x="180" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="dV46EJVJ1ePy4s7cVzv9-11" parent="dV46EJVJ1ePy4s7cVzv9-10" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;" value="Docker" vertex="1">
+          <mxGeometry height="260" width="260" as="geometry" />
+        </mxCell>
+        <mxCell id="dV46EJVJ1ePy4s7cVzv9-12" parent="dV46EJVJ1ePy4s7cVzv9-10" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;" value="Kong API Gateway" vertex="1">
+          <mxGeometry height="120" width="150" x="70" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="dV46EJVJ1ePy4s7cVzv9-13" parent="dV46EJVJ1ePy4s7cVzv9-10" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Docker" vertex="1">
+          <mxGeometry height="30" width="60" x="115" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="dV46EJVJ1ePy4s7cVzv9-14" connectable="0" parent="1" style="group" value="" vertex="1">
+          <mxGeometry height="260" width="260" x="-180" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="dV46EJVJ1ePy4s7cVzv9-15" parent="dV46EJVJ1ePy4s7cVzv9-14" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;" value="Docker" vertex="1">
+          <mxGeometry height="260" width="260" as="geometry" />
+        </mxCell>
+        <mxCell id="dV46EJVJ1ePy4s7cVzv9-16" parent="dV46EJVJ1ePy4s7cVzv9-14" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;" value="React" vertex="1">
+          <mxGeometry height="120" width="150" x="70" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="dV46EJVJ1ePy4s7cVzv9-17" parent="dV46EJVJ1ePy4s7cVzv9-14" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Docker" vertex="1">
+          <mxGeometry height="30" width="60" x="115" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="dV46EJVJ1ePy4s7cVzv9-18" edge="1" parent="1" source="dV46EJVJ1ePy4s7cVzv9-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="dV46EJVJ1ePy4s7cVzv9-11">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
