@@ -1,4 +1,4 @@
-import { Column, Entity, PrimaryColumn } from 'typeorm';
+import { Column, CreateDateColumn, Entity, PrimaryColumn } from 'typeorm';
 
 @Entity('user')
 export class UserEntity {
@@ -12,8 +12,6 @@ export class UserEntity {
   picture: string;
   @Column({ type: 'timestamptz' })
   last_update: Date;
-  @Column({ type: 'timestamptz' })
+  @CreateDateColumn({ type: 'timestamptz', default: () => 'CURRENT_TIMESTAMP' })
   creation_Date: Date;
-  @Column({ length: 100 })
-  profile_description: string;
 }
